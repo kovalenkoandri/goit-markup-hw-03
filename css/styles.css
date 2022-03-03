@@ -35,7 +35,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -61,12 +61,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
 .logo-accent-color {
   color: var(--accent-color);
 }
@@ -78,17 +72,35 @@ body {
 
 /* ----------------header---------------- */
 
-.header-container {
-  border-bottom: 1px solid #ececec;
+.header-container-wrap {
+  display: flex;
+  flex-basis: 1600px;
   min-height: 80px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   align-content: space-between;
-  max-width: 1170px;
+  flex-basis: 1170px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .logo-header {
@@ -96,11 +108,7 @@ body {
   margin: 24px 0 25px 0;
 }
 
-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.nav-container {
   display: flex;
   flex-flow: row wrap;
   flex-basis: 532px; /* 145+93+294; */
@@ -125,7 +133,9 @@ nav {
 
 .bg-order-service {
   background-color: #2f303a;
+  min-width: 1600px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .index-h1 {
@@ -149,6 +159,24 @@ nav {
   font-family: inherit;
 }
 
+.ul-our-features {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 1170px;
+  margin-left: calc(-1 * var(--gap));
+  outline: 1px solid green;
+}
+/* justify-content: space-between; */
+
+.li-our-features {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: calc(100% / 4 - var(--gap));
+  margin-left: var(--gap);
+  outline: 1px solid green;
+}
+/* flex-basis: 270px; */
+
 .index-h3-our-features {
   font-size: 14px;
   line-height: 1.14;
@@ -169,8 +197,40 @@ nav {
   font-weight: 700;
 }
 
+.ul-what-we-do {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 1170px;
+  margin-left: calc(-1 * var(--gap));
+  outline: 1px solid green;
+}
+
+.li-what-we-do {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: calc(100% / 3 - var(--gap));
+  margin-left: var(--gap);
+  outline: 1px solid green;
+}
+
 .bg-color-team {
   background-color: #f5f4fa;
+}
+
+.ul-team {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 1170px;
+  margin-left: calc(-1 * var(--gap));
+  outline: 1px solid green;
+}
+
+.li-team {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: calc(100% / 4 - var(--gap));
+  margin-left: var(--gap);
+  outline: 1px solid green;
 }
 
 .index-h3-our-team {
@@ -198,9 +258,9 @@ nav {
 /* ----------------main portfolio.html---------------- */
 
 .ul-button {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
   flex-flow: row wrap;
   max-width: 611px;
   justify-content: space-between;
@@ -257,10 +317,10 @@ nav {
   margin-bottom: 30px; */
 /* outline: 1px solid tomato; */
 img {
-  /* outline: 1px solid tomato; */
   display: block;
   max-width: 100%;
   height: auto;
+  outline: 1px solid tomato;
 }
 
 .portfolio-h3-p {
@@ -285,16 +345,16 @@ img {
 
 .footer {
   background-color: #2f303a;
-  max-width: 1600px;
+  display: flex;
+  flex-basis: 1600px;
   min-height: 252px;
 }
 
 .footer-container {
   display: flex;
-  flex-direction: column;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+  flex-flow: column wrap;
+  flex-basis: 1170px;
+  margin: 0 auto;
 }
 
 .logo-footer {
