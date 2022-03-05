@@ -74,7 +74,7 @@ body {
 
 header {
   border-bottom: 1px solid #ececec;
-  padding: 200px 0;
+  padding: 25px 0;
 }
 
 .header-container {
@@ -166,12 +166,12 @@ header {
 
 .ul-our-features {
   display: flex;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .li-our-features {
   width: 270px;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .li-our-features:not(:last-child) {
@@ -201,7 +201,7 @@ header {
 
 .ul-what-we-do {
   display: flex;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .li-what-we-do:not(:last-child) {
@@ -222,7 +222,7 @@ header {
 
 .ul-team {
   display: flex;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   background-color: #fff;
 }
 
@@ -231,7 +231,7 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 .li-team:not(:last-child) {
@@ -263,11 +263,12 @@ header {
 .ul-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 /* max-width: 611px; */
 
 .li-button:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .button {
@@ -281,27 +282,28 @@ header {
   border-radius: 4px;
   color: var(--primary-text-color);
   border: none;
+  padding: 6px 22px;
 }
-
-/* .all {
-  min-width: 73px;
-}
-
-.web-sites {
-  min-width: 128px;
-}
-
-.applications {
-  min-width: 145px;
-}
-
-.design {
-  min-width: 103px;
-}
-
-.marketing {
-  min-width: 130px;
+/* 
+.all {
 } */
+/* min-width: 73px; */
+/* 
+.web-sites {
+} */
+/* min-width: 128px; */
+/* 
+.applications {
+} */
+/* min-width: 145px; */
+/* 
+.design {
+} */
+/* min-width: 103px; */
+
+/* .marketing {
+} */
+/* min-width: 130px; */
 
 .portfolio-ul {
   display: flex;
@@ -312,7 +314,6 @@ header {
 /* flex-basis: 1170px; */
 
 .portfolio-ul > .portfolio-ul-li {
-  border-bottom: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - var(--gap));
   margin-left: var(--gap);
   margin-top: var(--gap);
@@ -322,11 +323,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .portfolio-h3-p {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 /* min-width: 322px; */
 
@@ -335,6 +339,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--primary-text-color);
 }
 
 .portfolio-p {
